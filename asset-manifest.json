@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/learn-react-feedback-apps/static/css/main.9e16105f.chunk.css",
-    "main.js": "/learn-react-feedback-apps/static/js/main.7bcb8a59.chunk.js",
-    "main.js.map": "/learn-react-feedback-apps/static/js/main.7bcb8a59.chunk.js.map",
-    "runtime-main.js": "/learn-react-feedback-apps/static/js/runtime-main.e68e2577.js",
-    "runtime-main.js.map": "/learn-react-feedback-apps/static/js/runtime-main.e68e2577.js.map",
-    "static/js/2.f7507408.chunk.js": "/learn-react-feedback-apps/static/js/2.f7507408.chunk.js",
-    "static/js/2.f7507408.chunk.js.map": "/learn-react-feedback-apps/static/js/2.f7507408.chunk.js.map",
-    "static/js/3.b23030b9.chunk.js": "/learn-react-feedback-apps/static/js/3.b23030b9.chunk.js",
-    "static/js/3.b23030b9.chunk.js.map": "/learn-react-feedback-apps/static/js/3.b23030b9.chunk.js.map",
+    "main.js": "/learn-react-feedback-apps/static/js/main.3d33883a.chunk.js",
+    "main.js.map": "/learn-react-feedback-apps/static/js/main.3d33883a.chunk.js.map",
+    "runtime-main.js": "/learn-react-feedback-apps/static/js/runtime-main.2d5f0cde.js",
+    "runtime-main.js.map": "/learn-react-feedback-apps/static/js/runtime-main.2d5f0cde.js.map",
+    "static/js/2.f5913635.chunk.js": "/learn-react-feedback-apps/static/js/2.f5913635.chunk.js",
+    "static/js/2.f5913635.chunk.js.map": "/learn-react-feedback-apps/static/js/2.f5913635.chunk.js.map",
+    "static/js/3.65728e42.chunk.js": "/learn-react-feedback-apps/static/js/3.65728e42.chunk.js",
+    "static/js/3.65728e42.chunk.js.map": "/learn-react-feedback-apps/static/js/3.65728e42.chunk.js.map",
     "index.html": "/learn-react-feedback-apps/index.html",
-    "precache-manifest.b154c8fb38b5ebb8ff5b73d5368c396c.js": "/learn-react-feedback-apps/precache-manifest.b154c8fb38b5ebb8ff5b73d5368c396c.js",
+    "precache-manifest.dbe28ceab566e2ae38107fbe3f1442fc.js": "/learn-react-feedback-apps/precache-manifest.dbe28ceab566e2ae38107fbe3f1442fc.js",
     "service-worker.js": "/learn-react-feedback-apps/service-worker.js",
     "static/css/main.9e16105f.chunk.css.map": "/learn-react-feedback-apps/static/css/main.9e16105f.chunk.css.map",
-    "static/js/2.f7507408.chunk.js.LICENSE.txt": "/learn-react-feedback-apps/static/js/2.f7507408.chunk.js.LICENSE.txt",
+    "static/js/2.f5913635.chunk.js.LICENSE.txt": "/learn-react-feedback-apps/static/js/2.f5913635.chunk.js.LICENSE.txt",
     "static/media/5000x1500.png": "/learn-react-feedback-apps/static/media/5000x1500.d232155c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e68e2577.js",
-    "static/js/2.f7507408.chunk.js",
+    "static/js/runtime-main.2d5f0cde.js",
+    "static/js/2.f5913635.chunk.js",
     "static/css/main.9e16105f.chunk.css",
-    "static/js/main.7bcb8a59.chunk.js"
+    "static/js/main.3d33883a.chunk.js"
   ]
 }
