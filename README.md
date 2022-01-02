@@ -1,6 +1,6 @@
 # Demo page
 
-Please open [**Demo Page**](https://github.com/sinau123/learn-react-feedback-apps)
+Please open [**https://sinau123.github.io/learn-react-feedback-apps**](https://sinau123.github.io/learn-react-feedback-apps)
 
 # Getting Started with Create React App
 
