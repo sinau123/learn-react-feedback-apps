@@ -23,8 +23,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "pnpm run build && pnpm run deploy",
-    "deploy": "gh-pages -d build",
+    "predeploy": "pnpm run build",
+    "deploy": "pnpm run build && gh-pages -d build",
     "start": "PUBLIC_URL=/ react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
