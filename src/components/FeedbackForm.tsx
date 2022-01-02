@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import Card from "./shared/Card";
 import Button from "./shared/Button";
 import FeedbackRatingForm from "./FeedbackRatingForm";
-import { IFeedback } from "../data/feedbackData";
+import IFeedback from "../models/FeedbackModel";
 
 interface FeedbackFormProps {
   handleAdd: (value: IFeedback) => void;
@@ -45,7 +45,7 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ handleAdd }) => {
       return;
     }
 
-    const newFeedback = { text: textTrim, rating, id: uuidv4() };
+    const newFeedback = { id: uuidv4(), rating, text: textTrim };
     handleAdd(newFeedback);
     setText("");
     setRating(10);

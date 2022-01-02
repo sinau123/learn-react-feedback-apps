@@ -1,5 +1,5 @@
 import React from "react";
-import { IFeedback } from "../data/feedbackData";
+import IFeedback from "../models/FeedbackModel";
 
 interface FeedbackStatsProps {
   feedback: IFeedback[];

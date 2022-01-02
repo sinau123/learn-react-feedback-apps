@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FeedbackItem from "./FeedbackItem";
-import { IFeedback } from "../data/feedbackData";
+import IFeedback from "../models/FeedbackModel";
 
 interface FeedbackListProps {
   feedback: IFeedback[];

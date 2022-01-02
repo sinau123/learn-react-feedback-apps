@@ -1,8 +1,4 @@
-export interface IFeedback {
-  id: string,
-  rating: number,
-  text: string
-}
+import IFeedback from "../models/FeedbackModel";
 
 const FeedbackData: IFeedback[] = [
   {

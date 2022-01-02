@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
+import IFeedback from "../models/FeedbackModel";
 import Card from "./shared/Card";
-import { IFeedback } from "../data/feedbackData";
 
 interface FeedbackItemProps {
   item: IFeedback;
