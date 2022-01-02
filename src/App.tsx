@@ -9,6 +9,7 @@ import FeedbackData, { IFeedback } from "./data/feedbackData";
 import logo from "./assets/images/5000x1500.png";
 import AboutPage from "./pages/AboutPage";
 import AboutPageLink from "./components/AboutPageLink";
+import { isDev } from "./helpers";
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
@@ -21,8 +22,9 @@ function App() {
     setFeedback([newFeedback, ...feedback]);
   };
   return (
-    <Router>
+    <Router basename={isDev() ? undefined : process.env.PUBLIC_URL}>
       <div className="container">
+        {isDev() ? "halo" : "hola"}
         <img className="logo" src={logo} alt="Logo" />
         <Route exact path="/">
           <Header text={undefined} />
