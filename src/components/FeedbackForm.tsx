@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Card from "./shared/Card";
 import Button from "./shared/Button";
 import FeedbackRatingForm from "./FeedbackRatingForm";
-import IFeedback from "../models/FeedbackModel";
+import FeedbackContext from "../context/FeedbackContext";
 
-interface FeedbackFormProps {
-  handleAdd: (value: IFeedback) => void;
-}
-
-const FeedbackForm: React.FC<FeedbackFormProps> = ({ handleAdd }) => {
+const FeedbackForm: React.FC = () => {
+  const { addFeedback } = useContext(FeedbackContext);
   const [text, setText] = useState("");
   const [btnDisabled, setBtnDisabled] = useState(false);
   const [message, setMessage] = useState("");
@@ -46,7 +43,7 @@ const FeedbackForm: React.FC<FeedbackFormProps> = ({ handleAdd }) => {
     }
 
     const newFeedback = { id: uuidv4(), rating, text: textTrim };
-    handleAdd(newFeedback);
+    addFeedback(newFeedback);
     setText("");
     setRating(10);
   };

@@ -1,11 +1,8 @@
-import React from "react";
-import IFeedback from "../models/FeedbackModel";
+import React, { useContext } from "react";
+import FeedbackContext from "../context/FeedbackContext";
 
-interface FeedbackStatsProps {
-  feedback: IFeedback[];
-}
-
-const FeedbackStats: React.FC<FeedbackStatsProps> = ({ feedback }) => {
+const FeedbackStats: React.FC = () => {
+  const { feedback } = useContext(FeedbackContext);
   const sumRating = feedback.reduce((acc, curr) => {
     return acc + curr.rating;
   }, 0);
