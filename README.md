@@ -1,3 +1,17 @@
+# Description
+Simple Feedback Apps built using reactJS for learning purpose. 
+
+App features:
+1. Show feedback list item
+2. Add feedback with rating
+3. Edit feedback
+
+This project was taken from this course https://www.udemy.com/course/react-front-to-back-2022 with some enhancement
+1. Use typescript
+2. Use Local Storage for persisting data
+
+[![YOmQyP.md.png](https://iili.io/YOmQyP.md.png)](https://freeimage.host/i/YOmQyP)
+
 # Demo page
 
 Please open [**https://sinau123.github.io/learn-react-feedback-apps**](https://sinau123.github.io/learn-react-feedback-apps)
