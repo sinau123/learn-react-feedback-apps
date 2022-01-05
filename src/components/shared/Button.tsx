@@ -1,6 +1,11 @@
 import React from "react";
 
-interface ButtonProps {
+interface ButtonProps
+  extends React.DetailedHTMLProps<
+      React.ButtonHTMLAttributes<HTMLButtonElement>,
+      HTMLButtonElement
+    >,
+    React.AriaAttributes {
   children: React.ReactNode;
   type?: "submit" | "reset" | "button" | undefined;
   version?: string;

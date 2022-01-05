@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import Card from "./shared/Card";
 import Button from "./shared/Button";
@@ -6,7 +6,21 @@ import FeedbackRatingForm from "./FeedbackRatingForm";
 import FeedbackContext from "../context/FeedbackContext";
 
 const FeedbackForm: React.FC = () => {
-  const { addFeedback } = useContext(FeedbackContext);
+  const {
+    addFeedback,
+    feedbackEditData: feedbackEdit,
+    setFeedbackEditData,
+    editFeedback,
+  } = useContext(FeedbackContext);
+
+  useEffect(() => {
+    if (feedbackEdit !== undefined) {
+      setBtnDisabled(false);
+      setText(feedbackEdit.text);
+      setRating(feedbackEdit.rating);
+    }
+  }, [feedbackEdit]);
+
   const [text, setText] = useState("");
   const [btnDisabled, setBtnDisabled] = useState(false);
   const [message, setMessage] = useState("");
@@ -42,10 +56,17 @@ const FeedbackForm: React.FC = () => {
       return;
     }
 
-    const newFeedback = { id: uuidv4(), rating, text: textTrim };
-    addFeedback(newFeedback);
+    if (feedbackEdit !== undefined) {
+      editFeedback(feedbackEdit.id, { rating, text: textTrim });
+      setFeedbackEditData(undefined);
+    } else {
+      const newFeedback = { id: uuidv4(), rating, text: textTrim };
+      addFeedback(newFeedback);
+    }
+
     setText("");
     setRating(10);
+    setBtnDisabled(true);
   };
 
   return (
@@ -64,7 +85,7 @@ const FeedbackForm: React.FC = () => {
             onChange={handleTextChange}
           />
           <Button type="submit" version="primary" disabled={btnDisabled}>
-            Send
+            {feedbackEdit ? "Edit" : "Add"}
           </Button>
         </div>
         <div className="form__info">
@@ -72,6 +93,17 @@ const FeedbackForm: React.FC = () => {
           <div>
             {text.length}/{maxChar} Char(s)
           </div>
+        </div>
+        <div className="form__footer">
+          {feedbackEdit && (
+            <Button
+              type="button"
+              version="secondary"
+              onClick={() => setFeedbackEditData(undefined)}
+            >
+              cancel
+            </Button>
+          )}
         </div>
       </form>
     </Card>

@@ -23,6 +23,13 @@ export default class FeedbackHelper {
         return rv
     }
 
+    static editFeedback(id: string, feedbackData: Partial<IFeedback>) {
+        const feedback = this.getFeedback().map(feedbackItem => {
+            return feedbackItem.id === id ? { ...feedbackItem, ...feedbackData } : feedbackItem
+        })
+        setLocalStorage(FeedbackHelper.feedbackStorageKey, feedback)
+    }
+
 
     static getFeedback() {
         return getLocalStorage(FeedbackHelper.feedbackStorageKey) as IFeedback[] || [];
