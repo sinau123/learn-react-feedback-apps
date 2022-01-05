@@ -7,8 +7,8 @@ App features:
 3. Edit feedback
 
 This project was taken from this course https://www.udemy.com/course/react-front-to-back-2022 with some enhancement
-1. Use typescript
-2. Use Local Storage for persisting data
+1. Using typescript
+2. Using Local Storage for persisting data
 
 [![YOmQyP.md.png](https://iili.io/YOmQyP.md.png)](https://freeimage.host/i/YOmQyP)
 
