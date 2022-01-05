@@ -18,6 +18,10 @@ const FeedbackForm: React.FC = () => {
       setBtnDisabled(false);
       setText(feedbackEdit.text);
       setRating(feedbackEdit.rating);
+    } else {
+      setBtnDisabled(true);
+      setText("");
+      setRating(10);
     }
   }, [feedbackEdit]);
 

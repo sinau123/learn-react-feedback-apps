@@ -16,9 +16,15 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   version = "primary",
   disabled = false,
+  ...props
 }) => {
   return (
-    <button type={type} disabled={disabled} className={`btn btn-${version}`}>
+    <button
+      {...props}
+      type={type}
+      disabled={disabled}
+      className={`btn btn-${version}`}
+    >
       {children}
     </button>
   );
