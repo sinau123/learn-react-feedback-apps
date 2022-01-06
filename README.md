@@ -1,5 +1,5 @@
 # Description
-Simple Feedback Apps built using reactJS for learning purpose. 
+Simple Feedback Apps built using reactJS. 
 
 App features:
 1. Show feedback list item
